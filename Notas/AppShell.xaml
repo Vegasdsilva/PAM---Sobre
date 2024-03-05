@@ -7,9 +7,26 @@
     Shell.FlyoutBehavior="Disabled"
     Title="Notas">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Notes"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Route="AboutPage" />
+
+        <ShellContent
+            Title="Mensagens"
+            ContentTemplate="{DataTemplate local:Mensagens}"
+            Route="Mensagens" />
+
+        <ShellContent
+            Title="NotePage"
+            ContentTemplate="{DataTemplate local:NotePage}"
+            Route="NotePage" />
+    </TabBar>
 
 </Shell>
